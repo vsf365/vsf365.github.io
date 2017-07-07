@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <style>
+    a{
+      position: fixed;
+      text-align: center;
+      background: red;
+
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <a href = "Level2.html">Click me!</a>
+
+  <script>
+  link = document.querySelector('a')
+
+  x = 0
+  dx = 5
+
+  function update(){
+    x = x + dx
+
+    if (x > 500) {
+      dx = -6
+    }
+
+    if (x < 0){
+      dx = 6
+    }
+
+    link.style.left = x + 'px'
+
+  }
+  setInterval(update, 10)
+
+
+
+  </script>
+
+
+</body>
+
+</html>

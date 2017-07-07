@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+    <h1>Enter a kind and nice compliment!</h1>
+    <input placeholder = "Enter a compliment.">
+    <button>Submit</button>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCMIrxz12pg8WJz8NhM6RqMgBr1aGnDEM4",
+        authDomain: "compliments-73fb6.firebaseapp.com",
+        databaseURL: "https://compliments-73fb6.firebaseio.com",
+        projectId: "compliments-73fb6",
+        storageBucket: "compliments-73fb6.appspot.com",
+        messagingSenderId: "567022977230"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="compliment.js"></script>
+
+</body>
+
+</html>
